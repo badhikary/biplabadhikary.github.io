@@ -1,5 +1,592 @@
-<h1>Biplab Adhikary</h1> <h3>Senior Data Analyst | BI Analyst</h3> <p>SQL • Python • Power BI • AI-accelerated Analytics & Reporting • Tableau</p> <p> 6+ Years Experience<br> U.S. Citizen<br> Open to Remote & Relocation </p> <hr> <p> <a href="https://www.linkedin.com/in/biplab-adhikary/" target="_blank"> LinkedIn </a> </p> <p> <a href="https://github.com/badhikary" target="_blank"> GitHub </a> </p> <p>
-    <a href="mailto:biplab@biplabadhikary.com">
-        Contact Me
-    </a>
-</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biplab Adhikary · Senior Data & BI Analyst</title>
+  <meta name="description" content="Biplab Adhikary — Senior Data & BI Analyst with 6+ years turning complex data into strategic decisions. Banking · Financial Services · Dallas, TX." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0A1628;
+      --bg-section: #0d1e38;
+      --bg-card:    #101e35;
+      --fg:         #F8FAFF;
+      --accent:     #2D7DD2;
+      --accent-lt:  #5B9FE8;
+      --muted:      #7A90A8;
+      --gold:       #F0A500;
+      --border:     rgba(45,125,210,0.18);
+      --border-sub: rgba(248,250,255,0.07);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: 'Inter', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      height: 56px;
+      background: rgba(10,22,40,0.88);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-sub);
+    }
+    .nav-logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.05rem;
+      color: var(--fg);
+      text-decoration: none;
+    }
+    .nav-logo em { font-style: italic; color: var(--accent-lt); }
+    .nav-links { display: flex; gap: 1.8rem; list-style: none; }
+    .nav-links a {
+      font-size: 0.75rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); text-decoration: none;
+      transition: color .2s;
+    }
+    .nav-links a:hover { color: var(--fg); }
+
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 6rem 1.5rem 4rem;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 65% 55% at 50% 42%, rgba(45,125,210,0.10) 0%, transparent 72%);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(120,160,210,0.07) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 680px; }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-size: .72rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--accent-lt); margin-bottom: 1.6rem;
+    }
+    .eyebrow-dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--gold);
+      animation: pulse-dot 2.4s ease-in-out infinite;
+    }
+    @keyframes pulse-dot {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.4; transform:scale(.65); }
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(2.8rem, 8vw, 4.4rem);
+      font-weight: 400; line-height: 1.06;
+      letter-spacing: -.01em; margin-bottom: .2rem;
+    }
+    h1 em { font-style: italic; color: var(--accent-lt); }
+
+    .pulse-wrap {
+      margin: 1.5rem auto 1.6rem;
+      width: 230px; height: 30px; overflow: visible;
+    }
+    .pulse-line {
+      stroke: var(--accent); stroke-width: 1.8; fill: none;
+      stroke-dasharray: 420; stroke-dashoffset: 420;
+      animation: draw 1.6s .3s cubic-bezier(.4,0,.2,1) forwards;
+    }
+    .pulse-peak {
+      stroke: var(--gold); stroke-width: 2.3; fill: none;
+      stroke-dasharray: 130; stroke-dashoffset: 130;
+      animation: draw .8s 1.1s cubic-bezier(.4,0,.2,1) forwards;
+    }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+
+    .hero-title {
+      font-size: 1.05rem; font-weight: 400;
+      color: var(--muted); margin-bottom: 1.6rem;
+    }
+    .hero-title strong { color: var(--fg); font-weight: 500; }
+
+    .hero-value {
+      font-size: 1.17rem; font-weight: 300;
+      line-height: 1.7; color: rgba(248,250,255,.80);
+      max-width: 530px; margin: 0 auto 2.2rem;
+    }
+    .hero-value b { font-weight: 500; color: var(--fg); }
+
+    .chips {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; gap: .5rem;
+      margin-bottom: 2.6rem;
+    }
+    .chip {
+      font-size: .74rem; font-weight: 500;
+      letter-spacing: .04em; padding: .35rem .88rem;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      background: rgba(45,125,210,.07);
+      color: var(--accent-lt);
+      transition: border-color .2s, background .2s;
+    }
+    .chip:hover { border-color: rgba(45,125,210,.5); background: rgba(45,125,210,.14); }
+
+    .hero-actions {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; gap: .85rem; margin-bottom: 2.8rem;
+    }
+    .btn {
+      display: inline-flex; align-items: center; gap: .45rem;
+      font-size: .88rem; font-weight: 500;
+      padding: .72rem 1.5rem; border-radius: 6px;
+      text-decoration: none; letter-spacing: .01em;
+      transition: transform .15s, box-shadow .15s, background .15s;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary {
+      background: var(--accent); color: #fff;
+      box-shadow: 0 4px 18px rgba(45,125,210,.32);
+    }
+    .btn-primary:hover { background:#3a8ee0; box-shadow:0 6px 22px rgba(45,125,210,.44); }
+    .btn-ghost {
+      background: transparent; color: var(--fg);
+      border: 1px solid rgba(248,250,255,.16);
+    }
+    .btn-ghost:hover { background:rgba(248,250,255,.05); border-color:rgba(248,250,255,.3); }
+
+    .contact-row {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; align-items: center; gap: 1.4rem;
+    }
+    .contact-item {
+      display: flex; align-items: center; gap: .4rem;
+      font-size: .82rem; color: var(--muted);
+      text-decoration: none; transition: color .2s;
+    }
+    .contact-item:hover { color: var(--accent-lt); }
+    .contact-item svg { flex-shrink:0; opacity:.6; }
+    .contact-item:hover svg { opacity:1; }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 5rem 1.5rem;
+      border-top: 1px solid var(--border-sub);
+    }
+    section:nth-of-type(even) { background: var(--bg-section); }
+    .section-inner { max-width: 780px; margin: 0 auto; }
+
+    .section-label {
+      font-size: .68rem; font-weight: 600;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--accent-lt); margin-bottom: 1rem;
+    }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      font-weight: 400; line-height: 1.2; margin-bottom: 1.5rem;
+    }
+    h2 em { font-style: italic; color: var(--accent-lt); }
+    p.lead {
+      font-size: 1.02rem; font-weight: 300;
+      color: rgba(248,250,255,.78); line-height: 1.75;
+      margin-bottom: 1.2rem;
+    }
+
+    /* ── ABOUT CARDS ── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1.1rem; margin-top: 2rem;
+    }
+    .about-card {
+      background: rgba(45,125,210,.06);
+      border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.3rem 1.4rem;
+    }
+    .about-card-label {
+      font-size: .67rem; font-weight: 600;
+      letter-spacing: .14em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: .55rem;
+    }
+    .about-card p { font-size: .87rem; color: rgba(248,250,255,.72); line-height: 1.65; }
+
+    /* ── SKILL GRID ── */
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; margin-top: 2rem;
+    }
+    .skill-card {
+      background: rgba(45,125,210,.05);
+      border: 1px solid var(--border);
+      border-radius: 10px; padding: 1.4rem;
+      transition: border-color .2s, background .2s;
+    }
+    .skill-card:hover { border-color: rgba(45,125,210,.4); background: rgba(45,125,210,.10); }
+    .skill-icon { font-size: 1.4rem; margin-bottom: .75rem; }
+    .skill-card h3 { font-size: .88rem; font-weight: 600; color: var(--fg); margin-bottom: .5rem; }
+    .skill-card p { font-size: .8rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── INDUSTRIES ── */
+    .industry-list { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.8rem; }
+    .industry-tag {
+      font-size: .78rem; font-weight: 500;
+      padding: .42rem 1rem; border-radius: 6px;
+      border: 1px solid var(--border-sub);
+      background: rgba(255,255,255,.03);
+      color: rgba(248,250,255,.72);
+      transition: border-color .2s, color .2s;
+    }
+    .industry-tag:hover { border-color: var(--accent); color: var(--accent-lt); }
+
+    /* ── SERVICES ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1rem; margin-top: 2rem;
+    }
+    .svc-card {
+      border-left: 2px solid var(--accent);
+      padding: 1.1rem 1.3rem;
+      background: rgba(45,125,210,.04);
+      border-radius: 0 8px 8px 0;
+    }
+    .svc-card h3 { font-size: .9rem; font-weight: 600; color: var(--fg); margin-bottom: .45rem; }
+    .svc-card p { font-size: .8rem; color: var(--muted); line-height: 1.6; }
+
+    /* ── CONTACT SECTION ── */
+    .contact-section { text-align: center; }
+    .contact-section p.lead { max-width: 480px; margin: 0 auto 2rem; }
+    .contact-big-email {
+      display: inline-flex; align-items: center; gap: .6rem;
+      font-size: 1.1rem; font-weight: 500;
+      color: var(--accent-lt); text-decoration: none;
+      border-bottom: 1px solid rgba(91,159,232,.35);
+      padding-bottom: .15rem; margin-bottom: 2.5rem;
+      transition: color .2s, border-color .2s;
+    }
+    .contact-big-email:hover { color: var(--fg); border-color: var(--fg); }
+    .contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .contact-link-btn {
+      display: inline-flex; align-items: center; gap: .4rem;
+      font-size: .84rem; font-weight: 500;
+      color: var(--muted); text-decoration: none;
+      padding: .55rem 1.1rem;
+      border: 1px solid var(--border-sub); border-radius: 6px;
+      transition: color .2s, border-color .2s, background .2s;
+    }
+    .contact-link-btn:hover { color: var(--fg); border-color: rgba(248,250,255,.22); background: rgba(255,255,255,.04); }
+
+    /* ── FOOTER ── */
+    footer {
+      padding: 1.8rem 1.5rem;
+      border-top: 1px solid var(--border-sub);
+      text-align: center;
+      font-size: .7rem;
+      color: rgba(120,145,170,.4);
+      letter-spacing: .06em; text-transform: uppercase;
+    }
+
+    /* ── ANIMATIONS ── */
+    .hero-inner > * {
+      opacity: 0; transform: translateY(14px);
+      animation: fade-up .55s ease forwards;
+    }
+    .eyebrow     { animation-delay: .05s; }
+    h1           { animation-delay: .15s; }
+    .pulse-wrap  { animation-delay: .25s; }
+    .hero-title  { animation-delay: .30s; }
+    .hero-value  { animation-delay: .38s; }
+    .chips       { animation-delay: .46s; }
+    .hero-actions{ animation-delay: .54s; }
+    .contact-row { animation-delay: .62s; }
+    @keyframes fade-up { to { opacity:1; transform:none; } }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      h1 { font-size: 2.4rem; }
+      .about-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">Biplab <em>Adhikary</em></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="hero" style="border-top:none;">
+    <div class="hero-inner">
+      <span class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Dallas, TX &nbsp;·&nbsp; Open to Opportunities
+      </span>
+
+      <h1>Biplab<br><em>Adhikary</em></h1>
+
+      <div class="pulse-wrap" aria-hidden="true">
+        <svg viewBox="0 0 230 30" xmlns="http://www.w3.org/2000/svg" width="230" height="30">
+          <path class="pulse-line" d="M0,15 L62,15 L74,15 L83,3 L91,27 L99,3 L107,27 L115,15 L124,15 L230,15" />
+          <path class="pulse-peak" d="M83,3 L91,27 L99,3 L107,27 L115,15" />
+        </svg>
+      </div>
+
+      <p class="hero-title">
+        <strong>Senior Data &amp; BI Analyst</strong> &nbsp;·&nbsp; 6+ Years in IT
+      </p>
+
+      <p class="hero-value">
+        I turn <b>raw data into decisions</b> — building SQL pipelines, Power BI dashboards,
+        and Python analytics that help banks and financial institutions move faster with confidence.
+      </p>
+
+      <div class="chips">
+        <span class="chip">SQL &amp; PL/SQL</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Python</span>
+        <span class="chip">Banking &amp; Financial Services</span>
+        <span class="chip">Credit Risk Analytics</span>
+        <span class="chip">Fair Lending</span>
+        <span class="chip">ETL &amp; Data Engineering</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="mailto:biplab@biplabadhikary.com" class="btn btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Get in Touch
+        </a>
+        <a href="#about" class="btn btn-ghost">Learn More ↓</a>
+      </div>
+
+      <div class="contact-row">
+        <a href="https://www.linkedin.com/in/biplab-adhikary/" target="_blank" rel="noopener" class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/badhikary" target="_blank" rel="noopener" class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub Portfolio
+        </a>
+        <span class="contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Dallas, TX
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <p class="section-label">About Me</p>
+      <h2>A decade of making data <em>useful</em></h2>
+      <p class="lead">
+        With over six years in IT, I work as a Senior Data &amp; BI Analyst helping
+        organizations — including Fortune 500 companies — turn complex datasets into
+        clear, actionable insights that support better business decisions.
+      </p>
+      <p class="lead">
+        As a US citizen with deep experience on projects involving sensitive government,
+        defense, and financial data, I bring a grounded understanding of US data protection,
+        privacy, and federal compliance requirements — including fair lending regulations
+        and HMDA reporting.
+      </p>
+      <div class="about-grid">
+        <div class="about-card">
+          <p class="about-card-label">Work Authorization</p>
+          <p>US Citizen — no sponsorship needed, eligible for federal and defense projects.</p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-label">Availability</p>
+          <p>Open to remote, hybrid, or on-site roles. Willing to relocate anywhere in the US and travel up to 100% if required.</p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-label">Domain Focus</p>
+          <p>Currently specialized in banking and financial services — credit risk, fair lending, mortgage analytics, and regulatory reporting.</p>
+        </div>
+        <div class="about-card">
+          <p class="about-card-label">Working Style</p>
+          <p>Agile practitioner comfortable leading stakeholder sessions, building SDLC-aligned deliverables, and presenting to executive audiences.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERTISE -->
+  <section id="expertise">
+    <div class="section-inner">
+      <p class="section-label">Technical Expertise</p>
+      <h2>Built on a <em>deep</em> technical stack</h2>
+      <p class="lead">
+        My toolkit spans the full data lifecycle — from raw ingestion and transformation
+        through analysis, modeling, and executive-ready visualization.
+      </p>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>SQL &amp; Databases</h3>
+          <p>SQL, PL/SQL — Oracle, SQL Server, IBM Db2, MySQL, PostgreSQL. Complex queries, stored procedures, performance tuning.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>BI &amp; Visualization</h3>
+          <p>Power BI (DAX, row-level security, paginated reports), Tableau — interactive dashboards for business and C-suite audiences.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <h3>Python &amp; Analytics</h3>
+          <p>Pandas, NumPy, Scikit-learn. Statistical analysis, predictive modeling, A/B testing, customer segmentation, and LLM integrations.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Data Engineering &amp; ETL</h3>
+          <p>Informatica, pipeline design, data masking with Delphix, OpenRefine for cleansing. End-to-end ETL across multi-source environments.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">☁️</div>
+          <h3>Cloud Data Warehouses</h3>
+          <p>Amazon Redshift, Google BigQuery, Azure Synapse Analytics, and Snowflake — cloud-native analytics at scale.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📁</div>
+          <h3>Excel &amp; Reporting</h3>
+          <p>Advanced Excel — pivot tables, Power Query, formula-driven workbooks, and audit-ready regulatory reporting models.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section id="industries">
+    <div class="section-inner">
+      <p class="section-label">Industry Experience</p>
+      <h2>Broad domain fluency, <em>deep</em> financial expertise</h2>
+      <p class="lead">
+        I've delivered data solutions across a wide range of sectors. This cross-industry
+        experience means I recognize data patterns and business problems others might miss —
+        and I bring that perspective to every engagement.
+      </p>
+      <div class="industry-list">
+        <span class="industry-tag">🏦 Banking &amp; Financial Services</span>
+        <span class="industry-tag">🛡️ Department of Defense &amp; Federal Agencies</span>
+        <span class="industry-tag">🚀 Space &amp; Defense Manufacturing</span>
+        <span class="industry-tag">✈️ Aviation &amp; Airlines</span>
+        <span class="industry-tag">💊 Pharmaceuticals &amp; Life Sciences</span>
+        <span class="industry-tag">🏥 Healthcare Providers &amp; Payers</span>
+        <span class="industry-tag">📡 Telecommunications</span>
+        <span class="industry-tag">🛒 Retail &amp; E-Commerce</span>
+        <span class="industry-tag">🚚 Transportation &amp; Logistics</span>
+        <span class="industry-tag">⚡ Energy &amp; Utilities</span>
+        <span class="industry-tag">🎓 Higher Education</span>
+        <span class="industry-tag">🎬 Entertainment</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-inner">
+      <p class="section-label">Services</p>
+      <h2>Turning data into a <em>strategic asset</em></h2>
+      <p class="lead">
+        I work with organizations that want more from their data than reports.
+        My engagements are focused on outcomes — the insights, models, and dashboards
+        that actually change how decisions get made.
+      </p>
+      <div class="services-grid">
+        <div class="svc-card">
+          <h3>Data Analysis &amp; Reporting</h3>
+          <p>SQL-based analytical views, KPI frameworks, and executive-ready reports tied to real business objectives.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Dashboard Development</h3>
+          <p>Power BI and Tableau dashboards with role-based security, drill-through navigation, and live data connections.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Predictive Modeling</h3>
+          <p>Machine learning models for credit risk, customer segmentation, churn prediction, and revenue forecasting.</p>
+        </div>
+        <div class="svc-card">
+          <h3>ETL Pipeline Design</h3>
+          <p>Scalable data pipelines from source to warehouse — cleansed, validated, and documented for ongoing operations.</p>
+        </div>
+        <div class="svc-card">
+          <h3>Regulatory &amp; Fair Lending Analytics</h3>
+          <p>HMDA analysis, fair lending compliance reviews, and mortgage data QC across Illinois and national datasets.</p>
+        </div>
+        <div class="svc-card">
+          <h3>AI / LLM Integration</h3>
+          <p>Practical AI integration into analyst workflows — automated summaries, anomaly detection, and prompt-driven reporting layers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact-section">
+    <div class="section-inner">
+      <p class="section-label">Contact</p>
+      <h2>Let's put your data <em>to work</em></h2>
+      <p class="lead">
+        Ready to discuss a role, a project, or a data challenge?
+        Reach out directly — I respond promptly.
+      </p>
+      <a href="mailto:biplab@biplabadhikary.com" class="contact-big-email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        biplab@biplabadhikary.com
+      </a>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/biplab-adhikary/" target="_blank" rel="noopener" class="contact-link-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/badhikary" target="_blank" rel="noopener" class="contact-link-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub Portfolio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Biplab Adhikary &nbsp;·&nbsp; biplabadhikary.com</footer>
+
+</body>
+</html>
